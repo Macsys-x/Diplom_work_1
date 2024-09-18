@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="300.0" style="-fx-border-color: #e39c12; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ControllerAuthorization">
+   <children>
+      <AnchorPane prefHeight="45.0" prefWidth="300.0" style="-fx-background-color: #2E3348;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text boundsType="LOGICAL_VERTICAL_CENTER" disable="true" focusTraversable="true" layoutX="92.0" layoutY="22.0" lineSpacing="100.0" strokeType="INSIDE" strokeWidth="0.0" text="Авторизация" textAlignment="CENTER" textOrigin="CENTER" AnchorPane.bottomAnchor="12.100000000000001" AnchorPane.topAnchor="10.5">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.8068182396166252" endY="0.6704545617103577">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8899999856948853" green="0.6104857325553894" blue="0.07119999825954437" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="LabelUserName" blendMode="EXCLUSION" layoutX="58.0" layoutY="123.0" maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="184.0" promptText="Имя пользователя" snapToPixel="false" styleClass="Label" stylesheets="@TextField.css" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <PasswordField fx:id="LabelPassword" blendMode="EXCLUSION" layoutX="58.0" layoutY="212.0" prefHeight="26.0" prefWidth="184.0" promptText="Пароль" styleClass="Label" stylesheets="@TextField.css" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0">
+         <effect>
+            <Glow />
+         </effect>
+      </PasswordField>
+      <Button fx:id="ButtonConnection" alignment="CENTER" contentDisplay="CENTER" layoutX="79.0" layoutY="361.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="142.0" styleClass="buttonBlue" stylesheets="@Button.css" text="Войти" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="79.0" AnchorPane.rightAnchor="79.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-border-color: #e39c12; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ControllerDisciplines">
+   <children>
+      <AnchorPane prefHeight="63.0" prefWidth="1000.0" style="-fx-background-color: #2E3348;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text boundsType="LOGICAL_VERTICAL_CENTER" disable="true" focusTraversable="true" layoutX="381.0" layoutY="31.0" lineSpacing="100.0" strokeType="INSIDE" strokeWidth="0.0" text="Рейтинговая система" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="231.9999999999999" AnchorPane.bottomAnchor="18.200000000000003" AnchorPane.topAnchor="17.0">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.8068182396166252" endY="0.6704545617103577">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8899999856948853" green="0.6104857325553894" blue="0.07119999825954437" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Button fx:id="buttonBack" layoutX="14.0" layoutY="16.0" minWidth="34.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="34.0" styleClass="buttonBlue" stylesheets="@Button.css" text=" ⬅" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <MenuButton fx:id="kurs_disciplines" layoutX="32.0" layoutY="93.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="353.0" text="Курс" textAlignment="JUSTIFY">
+
+      </MenuButton>
+      <MenuButton fx:id="direction_discipline" layoutX="32.0" layoutY="143.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="353.0" text="Направление обучения" textAlignment="JUSTIFY">
+
+      </MenuButton>
+      <MenuButton fx:id="discipline" layoutX="32.0" layoutY="196.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="353.0" text="Дисциплина">
+
+      </MenuButton>
+      <TextField fx:id="countVisits" blendMode="EXCLUSION" layoutX="31.0" layoutY="242.0" onAction="#eventScoreVisit" prefHeight="38.0" prefWidth="354.0" promptText="Введите количество посещенных занятий" styleClass="Label" stylesheets="@TextField.css" />
+      <Label fx:id="textCountVisitScore" layoutX="32.0" layoutY="305.0" prefHeight="18.0" prefWidth="354.0" text="Количество баллов за посещение:" />
+      <Label fx:id="Label_work1" layoutX="32.0" layoutY="345.0" prefHeight="18.0" prefWidth="391.0" text="Количество выполненных работ рубежного контроля типа 1" />
+      <Label fx:id="Label_work2" layoutX="32.0" layoutY="428.0" prefHeight="18.0" prefWidth="391.0" text="Количество выполненных работ рубежного контроля типа 2" />
+      <TextField fx:id="amountWork_1" blendMode="EXCLUSION" layoutX="31.0" layoutY="373.0" prefHeight="38.0" prefWidth="354.0" promptText="Количество работ" styleClass="Label" stylesheets="@TextField.css" />
+      <TextField fx:id="amountWork_2" blendMode="EXCLUSION" layoutX="32.0" layoutY="454.0" prefHeight="38.0" prefWidth="354.0" promptText="Количество работ" styleClass="Label" stylesheets="@TextField.css" />
+      <TextField fx:id="amountProject" blendMode="EXCLUSION" layoutX="32.0" layoutY="517.0" prefHeight="38.0" prefWidth="232.0" promptText="Количество сданных проектов" styleClass="Label" stylesheets="@TextField.css" />
+      <TextField fx:id="amountPresentation" blendMode="EXCLUSION" layoutX="31.0" layoutY="581.0" prefHeight="38.0" prefWidth="232.0" promptText="Количество сданных презентаций" styleClass="Label" stylesheets="@TextField.css" />
+      <TextField fx:id="amountReport" blendMode="EXCLUSION" layoutX="547.0" layoutY="88.0" prefHeight="38.0" prefWidth="322.0" promptText="Количество сданных докладов" styleClass="Label" stylesheets="@TextField.css" />
+      <TextField fx:id="amountIndependentWork" blendMode="EXCLUSION" layoutX="547.0" layoutY="145.0" prefHeight="26.0" prefWidth="321.0" promptText="Количество выполненных самостоятельных работ" styleClass="Label" stylesheets="@TextField.css" />
+      <Label fx:id="AllColOfScore" layoutX="547.0" layoutY="251.0" prefHeight="20.0" prefWidth="214.0" text="Общее количество баллов: " />
+      <Label layoutX="547.0" layoutY="301.0" prefHeight="26.0" prefWidth="391.0" text="Сколько ещё минимум баллов нужно для получения оценки" />
+      <Label layoutX="547.0" layoutY="341.0" prefHeight="26.0" prefWidth="34.0" text="&quot;3&quot; —" />
+      <Label fx:id="MARK3" layoutX="582.0" layoutY="341.0" prefHeight="26.0" prefWidth="278.0" text="? баллов" />
+      <Label layoutX="547.0" layoutY="379.0" prefHeight="26.0" prefWidth="34.0" text="&quot;4&quot; —" />
+      <Label layoutX="547.0" layoutY="415.0" prefHeight="26.0" prefWidth="33.0" text="&quot;5&quot; —" />
+      <Label fx:id="MARK4" layoutX="583.0" layoutY="379.0" prefHeight="26.0" prefWidth="278.0" text="? баллов" />
+      <Label fx:id="MARK5" layoutX="582.0" layoutY="415.0" prefHeight="26.0" prefWidth="278.0" text="? баллов" />
+      <Button fx:id="ButtonCalculate" layoutX="679.0" layoutY="477.0" mnemonicParsing="false" onAction="#ClickOnButtonCalculate" styleClass="buttonBlue" stylesheets="@Button.css" text="Рассчитать" />
+      <Button fx:id="buttonNext" layoutX="884.0" layoutY="619.0" mnemonicParsing="false" onAction="#ClickOnButtonNext" styleClass="buttonBlue" stylesheets="@Button.css" text="Далее" />
+   </children>
+</AnchorPane>

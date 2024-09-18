@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-border-color: #e39c12; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ControllerForAdministrators">
+   <children>
+      <AnchorPane prefHeight="63.0" prefWidth="1000.0" style="-fx-background-color: #2E3348;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text boundsType="LOGICAL_VERTICAL_CENTER" disable="true" focusTraversable="true" layoutX="317.0" layoutY="32.0" lineSpacing="100.0" strokeType="INSIDE" strokeWidth="0.0" text="Редактирование дисциплин" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="360.28436279296875" AnchorPane.bottomAnchor="17.200000000000003" AnchorPane.topAnchor="18.0">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.8068182396166252" endY="0.6704545617103577">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8899999856948853" green="0.6104857325553894" blue="0.07119999825954437" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Button fx:id="buttonBack" layoutX="14.0" layoutY="16.0" minWidth="34.0" mnemonicParsing="false" onAction="#ClickOnButtonBack" prefHeight="30.0" prefWidth="34.0" styleClass="buttonBlue" stylesheets="@Button.css" text=" ⬅" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="EditType1ControlCountWorks" blendMode="EXCLUSION" layoutX="41.0" layoutY="409.0" prefHeight="38.0" prefWidth="380.0" promptText="Количество работ" styleClass="Label" stylesheets="@TextField.css" AnchorPane.leftAnchor="35.0" />
+      <TextField fx:id="EditCountProject" blendMode="EXCLUSION" layoutX="540.0" layoutY="286.0" prefHeight="38.0" prefWidth="233.0" promptText="Количество проектов" styleClass="Label" stylesheets="@TextField.css" AnchorPane.rightAnchor="224.0" />
+      <TextField fx:id="EditCountPresentation" blendMode="EXCLUSION" layoutX="540.0" layoutY="349.0" prefHeight="38.0" prefWidth="234.0" promptText="Количество презентаций" styleClass="Label" stylesheets="@TextField.css" AnchorPane.rightAnchor="224.0" />
+      <TextField fx:id="EditCountReport" blendMode="EXCLUSION" layoutX="540.0" layoutY="409.0" prefHeight="38.0" prefWidth="234.0" promptText="Количество докладов" styleClass="Label" stylesheets="@TextField.css" AnchorPane.rightAnchor="224.0" />
+      <TextField fx:id="EditCountIndependentWork" blendMode="EXCLUSION" layoutX="540.0" layoutY="469.0" prefHeight="38.0" prefWidth="234.0" promptText="Количество самостоятельных работ" styleClass="Label" stylesheets="@TextField.css" AnchorPane.rightAnchor="224.0" />
+      <TextField fx:id="EditCountLessons" blendMode="EXCLUSION" layoutX="44.0" layoutY="286.0" prefHeight="38.0" prefWidth="380.0" promptText="Количество занятий" styleClass="Label" stylesheets="@TextField.css" AnchorPane.leftAnchor="35.0" />
+      <TextField fx:id="EditType1Control" blendMode="EXCLUSION" layoutX="44.0" layoutY="349.0" prefHeight="38.0" prefWidth="380.0" promptText="Тип 1-ой работы текущего и рубежного контроля" styleClass="Label" stylesheets="@TextField.css" AnchorPane.leftAnchor="35.0" />
+      <TextField fx:id="EditType1ControlCountMark" blendMode="EXCLUSION" layoutX="38.0" layoutY="469.0" prefHeight="38.0" prefWidth="380.0" promptText="Количество баллов за работу" styleClass="Label" stylesheets="@TextField.css" AnchorPane.leftAnchor="35.0" />
+      <TextField fx:id="EditType2ControlCountWorks" blendMode="EXCLUSION" layoutX="540.0" layoutY="168.0" prefHeight="38.0" prefWidth="386.0" promptText="Количество работ" styleClass="Label" stylesheets="@TextField.css" AnchorPane.rightAnchor="70.0" />
+      <TextField fx:id="EditType2Control" blendMode="EXCLUSION" layoutX="537.0" layoutY="117.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="38.0" prefWidth="386.0" promptText="Тип 2-ой работы текущего и рубежного контроля" styleClass="Label" stylesheets="@TextField.css" AnchorPane.rightAnchor="70.0" />
+      <TextField fx:id="EditType2ControlCountMark" blendMode="EXCLUSION" layoutX="540.0" layoutY="223.0" prefHeight="38.0" prefWidth="386.0" promptText="Количество баллов за работу" styleClass="Label" stylesheets="@TextField.css" AnchorPane.rightAnchor="70.0" />
+      <TextField fx:id="EditMarkProject" blendMode="EXCLUSION" layoutX="803.0" layoutY="286.0" prefHeight="38.0" prefWidth="124.0" promptText="Кол-во баллов" styleClass="Label" stylesheets="@TextField.css" AnchorPane.rightAnchor="70.0" />
+      <TextField fx:id="EditMarkPresentation" blendMode="EXCLUSION" layoutX="803.0" layoutY="349.0" prefHeight="38.0" prefWidth="124.0" promptText="Кол-во баллов" styleClass="Label" stylesheets="@TextField.css" AnchorPane.rightAnchor="70.0" />
+      <TextField fx:id="EditMarkIndependentWork" blendMode="EXCLUSION" layoutX="803.0" layoutY="469.0" prefHeight="38.0" prefWidth="124.0" promptText="Кол-во баллов" styleClass="Label" stylesheets="@TextField.css" AnchorPane.rightAnchor="70.0" />
+      <TextField fx:id="EditMarkReport" blendMode="EXCLUSION" layoutX="803.0" layoutY="409.0" prefHeight="38.0" prefWidth="124.0" promptText="Кол-во баллов" styleClass="Label" stylesheets="@TextField.css" AnchorPane.rightAnchor="70.0" />
+      <Button fx:id="buttonSaveEdits" alignment="CENTER" layoutX="195.0" layoutY="603.0" mnemonicParsing="false" onAction="#ClickOnButtonSaveEdits" prefHeight="50.0" prefWidth="222.0" styleClass="buttonBlue" stylesheets="@Button.css" text="Сохранить изменения" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <MenuButton fx:id="EditKurs" layoutX="38.0" layoutY="108.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="380.0" text="Курс" textAlignment="JUSTIFY">
+
+      </MenuButton>
+      <MenuButton fx:id="EditDirection" layoutX="38.0" layoutY="168.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="380.0" text="Направление обучения" textAlignment="JUSTIFY">
+
+      </MenuButton>
+      <MenuButton fx:id="EditNameDiscipline" layoutX="38.0" layoutY="228.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="380.0" text="Дисциплина">
+
+      </MenuButton>
+      <Button fx:id="buttonDelete" alignment="CENTER" layoutX="545.0" layoutY="603.0" mnemonicParsing="false" onAction="#ClickOnButtonDelete" prefHeight="50.0" prefWidth="222.0" styleClass="buttonBlue" stylesheets="@Button.css" text="Удалить дисциплину" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="EditDisciplineLink" blendMode="EXCLUSION" layoutX="383.0" layoutY="531.0" prefHeight="38.0" prefWidth="234.0" promptText="Ссылка на доп. материалы" styleClass="Label" stylesheets="@TextField.css" />
+   </children>
+</AnchorPane>

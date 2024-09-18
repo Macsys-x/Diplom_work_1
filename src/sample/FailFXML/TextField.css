@@ -1,0 +1,6 @@
+.Label {
+    -fx-background-color: #2c2a2a;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0.3;
+-fx-text-fill: #ffffff;
+}

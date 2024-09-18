@@ -1,0 +1,1 @@
+Select * from Disciplines where kurs = 4 and direction='Прикладная информатика в экономике' and name_discipline ='Информационная безопасность'
